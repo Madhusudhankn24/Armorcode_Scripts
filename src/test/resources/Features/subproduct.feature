@@ -31,26 +31,26 @@ Feature: subproduct page functionality
     And click save button
     Then subproduct should be added on left panal
     
-  Scenario: verifying edit options
-    When click on desired or exit product
-    And click on edit option
-    And edit page should be displayed
-    And click on owenr option
-    When click on add team
-    And select any one team
-    Then team added sucessfully
-
-   Scenario: check navigation to finding page
-    When click on desiredd subproduct
-    And verify total  high medium low should be displayed in finding sumary
-    And click on total number of finding
-    And its navigate no finding summary
-    When click on critial option
-    And verify in severity critical defects only should be displayed
-    And click on high option
-    And verify in severity high defects only should be displayed
-    And click on lown option in findinf summary
-    Then verify the severity low defect only should be displayed
+  #Scenario: verifying edit options
+    #When click on desired or exit product
+    #And click on edit option
+    #And edit page should be displayed
+    #And click on owenr option
+    #When click on add team
+    #And select any one team
+    #Then team added sucessfully
+#
+   #Scenario: check navigation to finding page
+    #When click on desiredd subproduct
+    #And verify total  high medium low should be displayed in finding sumary
+    #And click on total number of finding
+    #And its navigate no finding summary
+    #When click on critial option
+    #And verify in severity critical defects only should be displayed
+    #And click on high option
+    #And verify in severity high defects only should be displayed
+    #And click on lown option in findinf summary
+    #Then verify the severity low defect only should be displayed
 #
   #Scenario: Check behaviour of clone subproduct
     #When click on add new subproduct

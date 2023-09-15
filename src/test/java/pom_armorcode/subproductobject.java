@@ -70,6 +70,7 @@ WebElement pwd;
 		wait.until(ExpectedConditions.visibilityOf(dots));
 	  dots.click();
   }
+  //Scenario2
   @FindBy(xpath = "//button[@class='ant-btn ant-btn-primary ant-btn-block']")
   WebElement newsub;
   public void newsub() {
@@ -77,7 +78,7 @@ WebElement pwd;
 		wait.until(ExpectedConditions.visibilityOf(newsub));
 	 newsub.click(); 
   }
-  //Scenario2
+
   
   @FindBy(xpath="(//div[@class='ant-select-selector'])[1]")
   WebElement product;
@@ -86,12 +87,13 @@ WebElement pwd;
 		wait.until(ExpectedConditions.visibilityOf(product));
 	  product.click();
   }
-  @FindBy(xpath="//div[text()='Testing_test']")
+  @FindBy(xpath="//div[text()='Tester']")
   WebElement test;
   public void test() {
 	  wait = new WebDriverWait(driver1, 10);
 		wait.until(ExpectedConditions.visibilityOf(product));
-	  test.click();
+		  Actions as= new Actions(driver1);
+		  as.moveToElement(test).click();
   }
   @FindBy(xpath="//input[@id='name'] ")
   WebElement name;
