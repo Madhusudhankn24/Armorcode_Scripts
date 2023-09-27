@@ -106,7 +106,7 @@ public class subproduct {
     @When("enter parent product, name, clone subproduct, description,  select type, status, version number and tags")
 	public void enter_parent_product_name_clone_subproduct_description_select_type_status_version_number_and_tags() throws InterruptedException {
   subproduct.product();    
-  subproduct.test();	  
+  subproduct.test().click();	  
   subproduct.name("product");         
   subproduct.type();	   Thread.sleep(1000);
   subproduct.iso();
@@ -175,6 +175,8 @@ public class subproduct {
 	public void click_save_button() {
 	   // driver.findElement(By.xpath("//span[text()='Submit']")).click();
 	subproduct.subclose();
+	subproduct.proced().click();
+	
 	
 	}
     @Then("subproduct should be added on left panal")
@@ -212,19 +214,21 @@ public class subproduct {
 	}
     @When("select any one team")
 	public void select_any_one_team() {
-	  subproduct.select_3kt();
+	 subproduct.select_3kt().click();
+	 
 	}
    @Then("team added sucessfully")
 	public void team_added_sucessfully() {
 	  // driver.findElement(By.xpath("//button[@class='ant-btn ant-btn-primary pull-right m-l-xs']")).click();
 	subproduct.subclose();
+	subproduct.proced().click();
 	  }
 //Scenario4	
 	@When("click on desiredd subproduct")
 	public void click_on_desiredd_subproduct() throws InterruptedException {
 		Thread.sleep(2000);
 		subproduct=new subproductobject(driver);
-	  subproduct.desired_prd();
+	  subproduct.desired_prd().click();
 	}
   @When("verify total  high medium low should be displayed in finding sumary")
 	public void verify_total_high_medium_low_should_be_displayed_in_finding_sumary() throws InterruptedException {
@@ -239,7 +243,7 @@ public class subproduct {
     @When("click on total number of finding")
 	public void click_on_total_number_of_finding() throws InterruptedException {
     	Thread.sleep(2000);
-   subproduct.click_total();
+   subproduct.click_total().click();
     	
 	}
     @When("its navigate no finding summary")

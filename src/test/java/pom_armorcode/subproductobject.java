@@ -87,13 +87,11 @@ WebElement pwd;
 		wait.until(ExpectedConditions.visibilityOf(product));
 	  product.click();
   }
-  @FindBy(xpath="//div[text()='Tester']")
+  @FindBy(xpath="//div[contains(text(),'Sample_Product')]")
   WebElement test;
-  public void test() {
-	  wait = new WebDriverWait(driver1, 10);
-		wait.until(ExpectedConditions.visibilityOf(product));
-		  Actions as= new Actions(driver1);
-		  as.moveToElement(test).click();
+  public WebElement test() {
+  return test;
+		
   }
   @FindBy(xpath="//input[@id='name'] ")
   WebElement name;
@@ -247,9 +245,8 @@ select_bu.click();
   }
   @FindBy(xpath="//span[text()='Proceed']")
   WebElement proced;
-  public void proced() {
-	  Actions as= new Actions(driver1);
-	  as.moveToElement(proced).click();
+  public WebElement proced() {
+	 return proced;
   }
 //Scenario3
   @FindBy(xpath = "//li[@data-id='61618']")
@@ -275,16 +272,19 @@ select_bu.click();
   }
   @FindBy(xpath = "//div[text()='3K Technologies']")
   WebElement select_3kt;
-  public void select_3kt() {
-	  select_3kt.click();
+  public  WebElement select_3kt() {
+	  Actions es=new Actions(driver1);
+	  es.moveToElement(select_3kt);
+	  return select_3kt;
   }
 //Scenario4
   
-  @FindBy(xpath = "//li[@data-id='1814']")
+  @FindBy(xpath = "//li[@data-id='1816']")
   WebElement desired_prd;
-  public void desired_prd() {
+  public WebElement desired_prd() {
 	  Actions as= new Actions(driver1);
-	  as.moveToElement(desired_prd).click();
+	  as.moveToElement(desired_prd);
+	  return desired_prd;
   }
   @FindBy(xpath = "//strong[text()='Updated By']")
   
@@ -325,12 +325,10 @@ select_bu.click();
   }
   @FindBy(xpath = "//span[@data-type='Total']")
   WebElement click_total;
-  public void click_total() {
-	  JavascriptExecutor hl= (JavascriptExecutor)driver1;
-	    hl.executeScript("arguments[0].click();",click_total );
-	  
+  public  WebElement click_total() {
+	 return click_total;
   }
-  @FindBy(xpath = "/html/body/div[1]/section/main/div/div[6]/div/div[3]/div/div/div/div/div/div[1]/table/thead/tr/th[3]/div/span[2]/span/span")
+  @FindBy(xpath = "")
  WebElement filter;
   public void filter() {
 	  JavascriptExecutor hl= (JavascriptExecutor)driver1;
