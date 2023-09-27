@@ -1,0 +1,385 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>61/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Aug 23 17:02:11 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>840 seconds (840217 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "mitigated for custon finding", "Findings page"</td>
+<td></td>
+<td>22</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Bucket propose Severity", "Findings page"</td>
+<td></td>
+<td>12</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Swith to aql filter", "Findings page"</td>
+<td></td>
+<td>11</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Export Report button", "Scans module"</td>
+<td></td>
+<td>5</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify upload scan functionality sucess scan", "Scans module"</td>
+<td></td>
+<td>23</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add template in manual finding", "Findings page"</td>
+<td></td>
+<td>7</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Change to False +ve normal flow", "Findings page"</td>
+<td></td>
+<td>15</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Confirm Bucket flow", "Findings page"</td>
+<td></td>
+<td>13</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Change to reopen", "Findings page"</td>
+<td></td>
+<td>13</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to application", "Findings page"</td>
+<td></td>
+<td>34</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to application", "Scans module"</td>
+<td></td>
+<td>16</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Navigate to login page.", "Login Screen"</td>
+<td></td>
+<td>5</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify upload scan functionality without entering any inputs", "Scans module"</td>
+<td></td>
+<td>3</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify upload scan functionality without entering scantool inputs", "Scans module"</td>
+<td></td>
+<td>5</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Change category", "Findings page"</td>
+<td></td>
+<td>13</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Bucket propose Accept", "Findings page"</td>
+<td></td>
+<td>15</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Bucket propose Accept Risk", "Findings page"</td>
+<td></td>
+<td>13</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Edit template in manual finding", "Findings page"</td>
+<td></td>
+<td>7</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Change Category Bucket flow", "Findings page"</td>
+<td></td>
+<td>14</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check pagination", "Scans module"</td>
+<td></td>
+<td>30</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Bucket propose False +ve", "Findings page"</td>
+<td></td>
+<td>13</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Bucket propose Reject", "Findings page"</td>
+<td></td>
+<td>16</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check Finding page basic loading.", "Findings page"</td>
+<td></td>
+<td>10</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check file name is shown when hovered on download report button", "Scans module"</td>
+<td></td>
+<td>3</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check conection of scan tool", "Scans module"</td>
+<td></td>
+<td>10</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "saved search for Teams", "Findings page"</td>
+<td></td>
+<td>11</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Propse mitigated normal flow", "Findings page"</td>
+<td></td>
+<td>19</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Bucket propose Basic Information", "Findings page"</td>
+<td></td>
+<td>14</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Sorting functionality", "Scans module"</td>
+<td></td>
+<td>4</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add Manual Finding", "Findings page"</td>
+<td></td>
+<td>7</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Select all", "Findings page"</td>
+<td></td>
+<td>5</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Bucket False +ve", "Findings page"</td>
+<td></td>
+<td>15</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add tags", "Findings page"</td>
+<td></td>
+<td>9</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "saved search for user", "Findings page"</td>
+<td></td>
+<td>12</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Change owner Bucket flow", "Findings page"</td>
+<td></td>
+<td>17</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify upload scan button", "Scans module"</td>
+<td></td>
+<td>2</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Change owner", "Findings page"</td>
+<td></td>
+<td>13</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Change to confirm", "Findings page"</td>
+<td></td>
+<td>15</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Accept risk three times", "Findings page"</td>
+<td></td>
+<td>41</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Change Due_date Bucket flow", "Findings page"</td>
+<td></td>
+<td>12</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Bucket propose Mitigated", "Findings page"</td>
+<td></td>
+<td>17</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "logout", "Login Screen"</td>
+<td></td>
+<td>2</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Bucket propose Duedate", "Findings page"</td>
+<td></td>
+<td>11</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify upload scan functionality unsucess scan", "Scans module"</td>
+<td></td>
+<td>20</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Change Summary", "Findings page"</td>
+<td></td>
+<td>22</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "mitigated Bucket flow", "Findings page"</td>
+<td></td>
+<td>11</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the inbuilt refresh button", "Scans module"</td>
+<td></td>
+<td>2</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Edit Basic Information Bucket flow", "Findings page"</td>
+<td></td>
+<td>14</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify upload scan functionality without entering product and subproduct inputs", "Scans module"</td>
+<td></td>
+<td>5</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Change Severity", "Findings page"</td>
+<td></td>
+<td>17</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Edit tags", "Findings page"</td>
+<td></td>
+<td>12</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Change Severity Bucket flow", "Findings page"</td>
+<td></td>
+<td>46</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Bucket propose Category", "Findings page"</td>
+<td></td>
+<td>14</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add  comment", "Findings page"</td>
+<td></td>
+<td>4</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "save specific filter", "Findings page"</td>
+<td></td>
+<td>13</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Bucket propose owner", "Findings page"</td>
+<td></td>
+<td>13</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify Upload scan with empty file.", "Scans module"</td>
+<td></td>
+<td>5</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Microsoft Login", "Login Screen"</td>
+<td></td>
+<td>27</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check .exe file accepting in upload scan", "Scans module"</td>
+<td></td>
+<td>6</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Result details", "Scans module"</td>
+<td></td>
+<td>13</td>
+<td>Runner.TestRunner@782859e</td></tr>
+<tr>
+<td title='Runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: Runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Ensure tooltip are present", "Scans module"</td>
+<td></td>
+<td>8</td>
+<td>Runner.TestRunner@782859e</td></tr>
+</table><p>
+</body>
+</html>
