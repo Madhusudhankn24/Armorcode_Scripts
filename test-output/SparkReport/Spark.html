@@ -1,0 +1,4789 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Armorcode</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Automation Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Aug 7, 2023 02:47:43 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Aug 7, 2023 02:47:43 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Aug 7, 2023 03:05:17 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>1</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>2</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='33%'>
+<b>1</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='66%'><b>2</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='93%'><b>44</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='6%'><b>3</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='99%'><b>306</b> steps passed</small></div>
+<div>
+<small data-tooltip='0%'><b>3</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"ALert Page funtionality":151.312,"ALert Page funtionality":869.331,"Login page":31.878
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@GS-085</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Microsoft_existing_user_Login</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GS-108</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GS-118</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GS-117</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GS-109</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GS-094</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GS-101</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GS-086</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GS-087</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GS-127</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GS-138</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GS-120</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GS-064</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GS-031</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GS-047</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GS-055</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Global_Settings_page</td>
+<td>40</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>97.561%</td>
+</tr>
+<tr>
+<td>@GS-100</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GS-110</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@AlertsPage</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>60%</td>
+</tr>
+<tr>
+<td>@GS-093</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GS-104</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@AL-002</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>60%</td>
+</tr>
+<tr>
+<td>@GS-116</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GS-041</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GS-103</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GS-107</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@GS-030</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GS-099</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GS-150</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GS-095</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Login</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Alerts</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>60%</td>
+</tr>
+<tr>
+<td>@GS-139</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GS-105</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>OsVersion</td>
+<td>22H2</td>
+</tr>
+<tr>
+<td>User</td>
+<td>Madhusudhan K N</td>
+</tr>
+<tr>
+<td>ApplicationName</td>
+<td>Armorcode</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 1,
+failParent: 2,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 44,
+failChild: 3,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 306,
+failGrandChild: 3,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@GS-085</a><a class="dropdown-item" href="#">@Microsoft_existing_user_Login</a><a class="dropdown-item" href="#">@GS-108</a><a class="dropdown-item" href="#">@GS-118</a><a class="dropdown-item" href="#">@GS-117</a><a class="dropdown-item" href="#">@GS-109</a><a class="dropdown-item" href="#">@GS-094</a><a class="dropdown-item" href="#">@GS-101</a><a class="dropdown-item" href="#">@GS-086</a><a class="dropdown-item" href="#">@GS-087</a><a class="dropdown-item" href="#">@GS-127</a><a class="dropdown-item" href="#">@GS-138</a><a class="dropdown-item" href="#">@GS-120</a><a class="dropdown-item" href="#">@GS-064</a><a class="dropdown-item" href="#">@GS-031</a><a class="dropdown-item" href="#">@GS-047</a><a class="dropdown-item" href="#">@GS-055</a><a class="dropdown-item" href="#">@Global_Settings_page</a><a class="dropdown-item" href="#">@GS-100</a><a class="dropdown-item" href="#">@GS-110</a><a class="dropdown-item" href="#">@AlertsPage</a><a class="dropdown-item" href="#">@GS-093</a><a class="dropdown-item" href="#">@GS-104</a><a class="dropdown-item" href="#">@AL-002</a><a class="dropdown-item" href="#">@GS-116</a><a class="dropdown-item" href="#">@GS-041</a><a class="dropdown-item" href="#">@GS-103</a><a class="dropdown-item" href="#">@GS-107</a><a class="dropdown-item" href="#">@GS-030</a><a class="dropdown-item" href="#">@GS-099</a><a class="dropdown-item" href="#">@GS-150</a><a class="dropdown-item" href="#">@GS-095</a><a class="dropdown-item" href="#">@Login</a><a class="dropdown-item" href="#">@Alerts</a><a class="dropdown-item" href="#">@GS-139</a><a class="dropdown-item" href="#">@GS-105</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">ALert Page funtionality</p>
+            <p class="text-sm">
+              <span>2:47:44 pm</span> / <span>00:02:31:312</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">ALert Page funtionality</h5>
+<span class='badge badge-success'>08.07.2023 2:47:44 pm</span>
+<span class='badge badge-danger'>08.07.2023 2:50:15 pm</span>
+<span class='badge badge-default'>00:02:31:312</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Check Count of Alerts based on Alert Severity</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>Check Count of Alerts based on Alert Severity</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User logged in to application</span>
+      <div><table class='markup-table table '><tr><td>emailID</td><td>password</td></tr><tr><td>madhusudhan.kv@3ktechnologies.com</td><td>Madhu@3ktech</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify User is on Alerts page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Verify count of Alerts based on Info</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="12"><span class="badge log pass-bg mr-2">Pass</span>Check Count of Alerts based on Alert Severity</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User logged in to application</span>
+      <div><table class='markup-table table '><tr><td>emailID</td><td>password</td></tr><tr><td>madhusudhan.kv@3ktechnologies.com</td><td>Madhu@3ktech</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify User is on Alerts page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Verify count of Alerts based on Low</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="21"><span class="badge log pass-bg mr-2">Pass</span>Check Count of Alerts based on Alert Severity</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User logged in to application</span>
+      <div><table class='markup-table table '><tr><td>emailID</td><td>password</td></tr><tr><td>madhusudhan.kv@3ktechnologies.com</td><td>Madhu@3ktech</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify User is on Alerts page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Verify count of Alerts based on Medium</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="30"><span class="badge log fail-bg mr-2">Fail</span>Check Count of Alerts based on Alert Severity</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given User logged in to application</span>
+      <div><table class='markup-table table '><tr><td>emailID</td><td>password</td></tr><tr><td>madhusudhan.kv@3ktechnologies.com</td><td>Madhu@3ktech</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify User is on Alerts page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then Verify count of Alerts based on High</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at StepDefinitions.AlertsSteps.verify_count_of_alerts_bas_ed_on_high(AlertsSteps.java:190)
+	at ✽.Verify count of Alerts based on High(file:///C:/Users/Administrator/OneDrive%20-%203K%20Softech%20Private%20Limited/Desktop/Armorcode_BDD_Framework/Armorocode_BDD_Framework/src/test/resources/featurefiles/Alerts.feature:25)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>appHooks.ArmorcodeHooks.TakeScreenshots(io.cucumber.java.Scenario)</span>
+      <div>Check_Count_of_Alerts_based_on_Alert_Severity
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded1.png' src="../embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="39"><span class="badge log fail-bg mr-2">Fail</span>Check Count of Alerts based on Alert Severity</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given User logged in to application</span>
+      <div><table class='markup-table table '><tr><td>emailID</td><td>password</td></tr><tr><td>madhusudhan.kv@3ktechnologies.com</td><td>Madhu@3ktech</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify User is on Alerts page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then Verify count of Alerts based on Critical</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at StepDefinitions.AlertsSteps.verify_count_of_alerts_bas_ed_on_critical(AlertsSteps.java:214)
+	at ✽.Verify count of Alerts based on Critical(file:///C:/Users/Administrator/OneDrive%20-%203K%20Softech%20Private%20Limited/Desktop/Armorcode_BDD_Framework/Armorocode_BDD_Framework/src/test/resources/featurefiles/Alerts.feature:25)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>appHooks.ArmorcodeHooks.TakeScreenshots(io.cucumber.java.Scenario)</span>
+      <div>Check_Count_of_Alerts_based_on_Alert_Severity
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded2.png' src="../embedded2.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="48"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">ALert Page funtionality</p>
+            <p class="text-sm">
+              <span>2:50:16 pm</span> / <span>00:14:29:331</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">ALert Page funtionality</h5>
+<span class='badge badge-success'>08.07.2023 2:50:16 pm</span>
+<span class='badge badge-danger'>08.07.2023 3:04:45 pm</span>
+<span class='badge badge-default'>00:14:29:331</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=48</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="49"><span class="badge log pass-bg mr-2">Pass</span>To verify Global Setting button</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_log_in_to_application()">
+                <span>Given User log in to application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.LoginSTeps.armorcode_dashboard_should_be_displayed()">
+                <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_clicks_on_global_setting_button()">
+                <span>When User clicks on global setting button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.global_setting_page_should_be_displayed()">
+                <span>Then Global setting page should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="58"><span class="badge log pass-bg mr-2">Pass</span>To verify Edited Product/Sub Products & Projects Names on every where.</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_log_in_to_application()">
+                <span>Given User log in to application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.LoginSTeps.armorcode_dashboard_should_be_displayed()">
+                <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_user_is_on_global_settings_page()">
+                <span>When Verify user is on Global settings page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_clicks_on_product_subproduct_status_button()">
+                <span>When User clicks on Product/Subproduct status button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.customize_product_subproduct_page_should_be_displayed()">
+                <span>Then Customize Product/Subproduct page should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.edit_active_status_and_click_on_add_status()">
+                <span>And Edit active status</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.add_new_status_and_click_on_save()">
+                <span>And Add new status and click on save</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_that_added_status_is_displaped()">
+                <span>Then Verify that added status is displaped</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="71"><span class="badge log pass-bg mr-2">Pass</span>To set the basis on which product risk score will be calculated.</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_log_in_to_application()">
+                <span>Given User log in to application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.LoginSTeps.armorcode_dashboard_should_be_displayed()">
+                <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_user_is_on_global_settings_page()">
+                <span>When Verify user is on Global settings page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_click_on_risk_calculation_type_button()">
+                <span>When User click on Risk Calculation type button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.risk_calculation_type_page_is_displayed()">
+                <span>Then Risk calculation type page is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_that_three_option_riskiest_mean_and_inferior_is_displayed()">
+                <span>Then Verify that three option Riskiest mean and Inferior is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.along_with_reset_to_default_button_is_displayed()">
+                <span>And Along with Reset to Default button is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_riskiest_is_selected_by_default()">
+                <span>Then Verify Riskiest is selected by default</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="84"><span class="badge log pass-bg mr-2">Pass</span>To check SLA template configs</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_log_in_to_application()">
+                <span>Given User log in to application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.LoginSTeps.armorcode_dashboard_should_be_displayed()">
+                <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_user_is_on_global_settings_page()">
+                <span>When Verify user is on Global settings page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_clicks_on_findings_sla_button()">
+                <span>When User clicks on Findings SLA button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.findings_sla_page_is_displayed()">
+                <span>Then Findings SLA page is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_default_sla_template_should_displyed()">
+                <span>Then Verify Default SLA template should displyed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="95"><span class="badge log pass-bg mr-2">Pass</span>To verify deletion of SLA template</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_log_in_to_application()">
+                <span>Given User log in to application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.LoginSTeps.armorcode_dashboard_should_be_displayed()">
+                <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_user_is_on_global_settings_page()">
+                <span>When Verify user is on Global settings page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_click_on_add_sla_button()">
+                <span>When User Click on Add SLA button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.add_sla_popup_should_displayed()">
+                <span>Then Add SLA popup should displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_enters_name_and_description()">
+                <span>When User enters name and description</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_enters_critical_high_medium_and_low_for_traige_sla_remediation_sla_and_resolution_sla()">
+                <span>And User enters Critical,High,Medium and low for TraigeSLA,RemediationSLA and ResolutionSLA</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.click_on_save()">
+                <span>And Click on save</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.success_popup_should_be_displayed()">
+                <span>Then Success popup should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_created_sla_is_displayd_in_sla_page()">
+                <span>And Verify Created SLA is displayd in SLA page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.delete_findings_sla_and_check_proper_message_displayed()">
+                <span>Then Delete Findings SLA and Check proper message displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="111"><span class="badge log pass-bg mr-2">Pass</span>Verify Global Settings-Relese Management</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_log_in_to_application()">
+                <span>Given User log in to application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.LoginSTeps.armorcode_dashboard_should_be_displayed()">
+                <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_user_is_on_global_settings_page()">
+                <span>When Verify user is on Global settings page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_click_on_release_management()">
+                <span>When User click on Release management</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.release_management_page_should_be_displayed()">
+                <span>Then Release management page should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_click_on_add_button()">
+                <span>When User click on Add button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.release_gate_popup_should_be_displayed()">
+                <span>And Release Gate popup should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_that_global_and_specific_options_displayed()">
+                <span>Then Verify that Global and specific options displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="124"><span class="badge log pass-bg mr-2">Pass</span>Verify the Dashboard has all the data</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_log_in_to_application()">
+                <span>Given User log in to application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.LoginSTeps.armorcode_dashboard_should_be_displayed()">
+                <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_user_is_on_global_settings_page()">
+                <span>When Verify user is on Global settings page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_clicks_on_dashboards()">
+                <span>When User clicks on Dashboards</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.dashboard_page_should_be_displayed()">
+                <span>And Dashboard page should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_user_is_able_to_view_oob_dashboards_and_default_dashboards()">
+                <span>Then Verify User is able to view OOB dashboards and Default dashboards</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="135"><span class="badge log pass-bg mr-2">Pass</span>when we hover on the pen Icon tooltip should be display</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_log_in_to_application()">
+                <span>Given User log in to application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.LoginSTeps.armorcode_dashboard_should_be_displayed()">
+                <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_user_is_on_global_settings_page()">
+                <span>When Verify user is on Global settings page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.mouse_hovers_on_pencil_icon_besides_dahshboards_names()">
+                <span>And Mouse hovers on pencil icon besides dahshboards names</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.proper_tooltip_should_be_displayed()">
+                <span>Then Proper tooltip should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="145"><span class="badge log pass-bg mr-2">Pass</span>when user Click on Pen icon edit dashboard popup should display</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_log_in_to_application()">
+                <span>Given User log in to application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.LoginSTeps.armorcode_dashboard_should_be_displayed()">
+                <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_user_is_on_global_settings_page()">
+                <span>When Verify user is on Global settings page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_click_on_edit_icon()">
+                <span>And User click on edit icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.edit_dashboard_name_popup_should_be_displayed()">
+                <span>Then Edit dashboard name popup should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_enter_newname_and_click_on_save()">
+                <span>And User enter newname and click on save</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_new_dashboard_name_should_be_updated()">
+                <span>Then Verify New Dashboard name should be updated</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="157"><span class="badge log pass-bg mr-2">Pass</span>Verify the checkbox and dashboard name</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_log_in_to_application()">
+                <span>Given User log in to application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.LoginSTeps.armorcode_dashboard_should_be_displayed()">
+                <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_user_is_on_global_settings_page()">
+                <span>When Verify user is on Global settings page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_uncheck_the_dashboard_name()">
+                <span>When user uncheck the dashboard name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.updated_popup_should_be_displayed()">
+                <span>And Updated popup should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_unchecked_dashboard_is_displayed_in_deafult_dashboard_dropdown()">
+                <span>Then Verify unchecked dashboard is displayed in deafult dashboard dropdown</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="168"><span class="badge log pass-bg mr-2">Pass</span>Verify the checkbox and dashboard name</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_log_in_to_application()">
+                <span>Given User log in to application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.LoginSTeps.armorcode_dashboard_should_be_displayed()">
+                <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_user_is_on_global_settings_page()">
+                <span>When Verify user is on Global settings page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_uncheck_the_dashboard_name()">
+                <span>When user uncheck the dashboard name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.updated_popup_should_be_displayed()">
+                <span>Then Updated popup should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="178"><span class="badge log pass-bg mr-2">Pass</span>Verify Dashboard config functionality</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_log_in_to_application()">
+                <span>Given User log in to application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.LoginSTeps.armorcode_dashboard_should_be_displayed()">
+                <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_user_is_on_global_settings_page()">
+                <span>When Verify user is on Global settings page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_click_on_configure_dashboard()">
+                <span>When User click on Configure dashboard</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.custom_dashboard_page_should_display()">
+                <span>Then Custom Dashboard page should display</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_user_is_able_to_add_new_and_delete_the_widget()">
+                <span>Then Verify User is able to add new and delete the widget</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="189"><span class="badge log pass-bg mr-2">Pass</span>Verify product/Sub product security Dashboard functionality</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_log_in_to_application()">
+                <span>Given User log in to application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.LoginSTeps.armorcode_dashboard_should_be_displayed()">
+                <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_user_is_on_global_settings_page()">
+                <span>When Verify user is on Global settings page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_clicks_on_product_sub_product_security_dashboard()">
+                <span>When User clicks on product Sub product security Dashboard</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.custom_dahsboard_with_security_dashboard_should_display()">
+                <span>Then Custom dahsboard with Security dashboard should display</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="199"><span class="badge log pass-bg mr-2">Pass</span>Configure Product / Subproduct SSDLC Dashboard functionality</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_log_in_to_application()">
+                <span>Given User log in to application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.LoginSTeps.armorcode_dashboard_should_be_displayed()">
+                <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_user_is_on_global_settings_page()">
+                <span>When Verify user is on Global settings page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.configure_product_subproduct_ssdlc_dashboard()">
+                <span>When Configure Product Subproduct SSDLC Dashboard</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.custom_dashboard_with_ssdlc_dashboard_should_display()">
+                <span>Then Custom dashboard with SSDLC dashboard should display</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="209"><span class="badge log pass-bg mr-2">Pass</span>Select the default Dashboard functionality</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_log_in_to_application()">
+                <span>Given User log in to application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.LoginSTeps.armorcode_dashboard_should_be_displayed()">
+                <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_user_is_on_global_settings_page()">
+                <span>When Verify user is on Global settings page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.click_on_default_dashboard_dropdown()">
+                <span>And Click on default dashboard dropdown</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.selects_the_ssdlc_healthcheck_as_default_dashboard()">
+                <span>And Selects the SSDLC Healthcheck as default dashboard</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.success_popup_should_displayed()">
+                <span>Then Success popup should displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.click_logout_button()">
+                <span>And Click logout button</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="221"><span class="badge log pass-bg mr-2">Pass</span>Select the default Dashboard functionality</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_log_in_to_application()">
+                <span>Given User log in to application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.LoginSTeps.armorcode_dashboard_should_be_displayed()">
+                <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_ssdlc_healthcheck_dashboard_should_display()">
+                <span>Then Verify SSDLC healthcheck dashboard should display</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="229"><span class="badge log pass-bg mr-2">Pass</span>Verify Reset to Default</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_log_in_to_application()">
+                <span>Given User log in to application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.LoginSTeps.armorcode_dashboard_should_be_displayed()">
+                <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_user_is_on_global_settings_page()">
+                <span>When Verify user is on Global settings page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_click_on_roi_calculation_button()">
+                <span>When User Click on ROI Calculation button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.Roi_calculation_page_should_be_displayed()">
+                <span>Then ROI Calculation page should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.change_the_man_hour_cost_and_time()">
+                <span>And Change the Man hour cost and Time</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.click_on_Save()">
+                <span>And Click on Save</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.success_popup_should_be_display()">
+                <span>Then Success popup should be display</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.click_on_reset_to_default_button()">
+                <span>And Click on Reset to Default button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.confirmation_popup_should_display()">
+                <span>Then Confirmation popup should display</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.click_on_yes()">
+                <span>And Click on Yes</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.man_hour_and_time_should_be_reset()">
+                <span>Then Man hour and Time should be reset</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="246"><span class="badge log pass-bg mr-2">Pass</span>Verify Error message of ROI Calculation</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_log_in_to_application()">
+                <span>Given User log in to application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.LoginSTeps.armorcode_dashboard_should_be_displayed()">
+                <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_user_is_on_global_settings_page()">
+                <span>When Verify user is on Global settings page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.ROI_calculation_page()">
+                <span>And Verify user is on ROI calculation page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.clear_the_value_from_both_fields()">
+                <span>And Clear the value from Both fields</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.click_on_Save()">
+                <span>And Click on Save</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.man_hour_and_time_required_error_message_should_display()">
+                <span>Then Man hour and time required error message should display</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="258"><span class="badge log pass-bg mr-2">Pass</span>Verify the success popup mesage</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_log_in_to_application()">
+                <span>Given User log in to application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.LoginSTeps.armorcode_dashboard_should_be_displayed()">
+                <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_user_is_on_global_settings_page()">
+                <span>When Verify user is on Global settings page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.ROI_calculation_page()">
+                <span>And Verify user is on ROI calculation page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.change_the_man_hour_cost_and_time()">
+                <span>And Change the Man hour cost and Time</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.click_on_Save()">
+                <span>And Click on Save</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.Success_popup_displayed()">
+                <span>Then Success popup should display</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="270"><span class="badge log fail-bg mr-2">Fail</span>Verify that User can esaily Change Title name of Respective Fields</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_log_in_to_application()">
+                <span>Given User log in to application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.LoginSTeps.armorcode_dashboard_should_be_displayed()">
+                <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_user_is_on_global_settings_page()">
+                <span>When Verify user is on Global settings page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_click_on_titles_button()">
+                <span>When User click on Titles button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.titles_page_should_display()">
+                <span>Then Titles page should display</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.click_on_manage_and_change_product()">
+                <span>And Click on Manage and change product</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_that_popup_should_display()">
+                <span>And Verify that popup should display</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.click_on_manage_and_change_sub_product()">
+                <span>And Click on Manage and change sub product</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_that_popup_should_display()">
+                <span>And Verify that popup should display</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="StepDefinitions.Global_Settings.verify_in_manage_section_specific_name_should_display()">
+                <span>Then Verify in Manage Section specific name should display</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at StepDefinitions.Global_Settings.verify_in_manage_section_specific_name_should_display(Global_Settings.java:517)
+	at ✽.Verify in Manage Section specific name should display(file:///C:/Users/Administrator/OneDrive%20-%203K%20Softech%20Private%20Limited/Desktop/Armorcode_BDD_Framework/Armorocode_BDD_Framework/src/test/resources/featurefiles/GlobalSettings.feature:162)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>appHooks.ArmorcodeHooks.TakeScreenshots(io.cucumber.java.Scenario)</span>
+      <div>Verify_that_User_can_esaily_Change_Title_name_of_Respective_Fields
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded3.png' src="../embedded3.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="285"><span class="badge log pass-bg mr-2">Pass</span>Verify the Title page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_log_in_to_application()">
+                <span>Given User log in to application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.LoginSTeps.armorcode_dashboard_should_be_displayed()">
+                <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_user_is_on_global_settings_page()">
+                <span>When Verify user is on Global settings page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_click_on_titles_button()">
+                <span>When User click on Titles button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.titles_page_should_display()">
+                <span>Then Titles page should display</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="295"><span class="badge log pass-bg mr-2">Pass</span>Verify that User can esaily Change Title name of Respective Fields</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_log_in_to_application()">
+                <span>Given User log in to application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.LoginSTeps.armorcode_dashboard_should_be_displayed()">
+                <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_user_is_on_global_settings_page()">
+                <span>When Verify user is on Global settings page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.Titles_page()">
+                <span>And Verify user is on titles page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.click_on_manage_and_change_product()">
+                <span>And Click on Manage and change product</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.click_on_Reset_to_default_button()">
+                <span>And Click on Reset to default button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.confirmation_popup_is_displayed()">
+                <span>Then Confirmation popup is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.click_on_yes_button()">
+                <span>And Click on Yes button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.Success_popup_manage_section()">
+                <span>And Success Popup should display</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_values_set_deafault_automatically()">
+                <span>Then Verify Values set deafault automatically</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="310"><span class="badge log pass-bg mr-2">Pass</span>Verify that Editable titles should be Disaply at Respective place.</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_log_in_to_application()">
+                <span>Given User log in to application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.LoginSTeps.armorcode_dashboard_should_be_displayed()">
+                <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_user_is_on_global_settings_page()">
+                <span>When Verify user is on Global settings page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.Titles_page()">
+                <span>And Verify user is on titles page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.click_on_finding_status_change_the_open_status()">
+                <span>And Click on Finding status change the open status</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_that_popup_should_display()">
+                <span>And Verify that popup should display</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_in_findings_page_edited_status_should_displa_properly()">
+                <span>Then Verify in findings page edited status should display properly</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="322"><span class="badge log pass-bg mr-2">Pass</span>Verify that Editable titles should be Disaply at Respective place.</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_log_in_to_application()">
+                <span>Given User log in to application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.LoginSTeps.armorcode_dashboard_should_be_displayed()">
+                <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_user_is_on_global_settings_page()">
+                <span>When Verify user is on Global settings page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.Titles_page()">
+                <span>And Verify user is on titles page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.click_on_finding_status_change_the_open_status()">
+                <span>And Click on Finding status change the open status</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_that_popup_should_display()">
+                <span>And Verify that popup should display</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.Reset_finding_status()">
+                <span>Then Reset to default findings status</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="334"><span class="badge log pass-bg mr-2">Pass</span>Verify That Devops Widget Configuration</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_log_in_to_application()">
+                <span>Given User log in to application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.LoginSTeps.armorcode_dashboard_should_be_displayed()">
+                <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_user_is_on_global_settings_page()">
+                <span>When Verify user is on Global settings page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.click_on_devops_widget_configuration_button()">
+                <span>And Click on Devops Widget Configuration button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.devops_widget_configuration_page_should_be_display()">
+                <span>Then Devops Widget Configuration page should be display</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="344"><span class="badge log pass-bg mr-2">Pass</span>Verify the Reset to Default button</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_log_in_to_application()">
+                <span>Given User log in to application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.LoginSTeps.armorcode_dashboard_should_be_displayed()">
+                <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_user_is_on_global_settings_page()">
+                <span>When Verify user is on Global settings page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_user_is_on_devops_widget_configuration_page()">
+                <span>And Verify user is on Devops Widget Configuration page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.edit_some_fields_and_click_on_submit_button()">
+                <span>And Edit some fields and click on Submit button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_submit_popup_should_display()">
+                <span>And Verify submit popup should display</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.click_on_reset_button()">
+                <span>And Click on Reset button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.the_reset_data_should_display()">
+                <span>Then The Reset data should display</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="357"><span class="badge log pass-bg mr-2">Pass</span>Verify the submit button</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_log_in_to_application()">
+                <span>Given User log in to application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.LoginSTeps.armorcode_dashboard_should_be_displayed()">
+                <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_user_is_on_global_settings_page()">
+                <span>When Verify user is on Global settings page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_user_is_on_devops_widget_configuration_page()">
+                <span>And Verify user is on Devops Widget Configuration page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.edit_some_fields_and_click_on_submit_button()">
+                <span>And Edit some fields and click on Submit button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_submit_popup_should_display()">
+                <span>And Verify submit popup should display</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.click_on_reset_button()">
+                <span>And Click on Reset button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.the_reset_data_should_display()">
+                <span>Then The Reset data should display</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="370"><span class="badge log pass-bg mr-2">Pass</span>Verify the Multi ticket setting page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_log_in_to_application()">
+                <span>Given User log in to application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.LoginSTeps.armorcode_dashboard_should_be_displayed()">
+                <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_user_is_on_global_settings_page()">
+                <span>When Verify user is on Global settings page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.click_on_multi_ticket_setting_button()">
+                <span>And Click on Multi ticket setting button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.multi_ticket_setting_page_should_display()">
+                <span>Then Multi ticket setting page should display</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_enables_multi_ticket_option()">
+                <span>When User enables multi ticket option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.popup_should_display_and_click_on_yes()">
+                <span>Then popup should display and click on yes</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.updated_success_popup_should_display()">
+                <span>Then Updated Success popup should display</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_disables_multi_ticket_option()">
+                <span>And User disables multi ticket option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.popup_should_display_and_click_on_yes()">
+                <span>Then popup should display and click on yes</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.updated_success_popup_should_display()">
+                <span>Then Updated Success popup should display</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="386"><span class="badge log pass-bg mr-2">Pass</span>Verify Global settings finding status page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_log_in_to_application()">
+                <span>Given User log in to application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.LoginSTeps.armorcode_dashboard_should_be_displayed()">
+                <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_user_is_on_global_settings_page()">
+                <span>When Verify user is on Global settings page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.click_on_finding_status_button()">
+                <span>And Click on Finding status button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.finding_status_page_should_display()">
+                <span>And Finding status page should display</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_accept_risk_prepetual_option_will_be_already_enabled()">
+                <span>Then Verify accept Risk Prepetual option will be already enabled</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="397"><span class="badge log pass-bg mr-2">Pass</span>Verify Global settings product status page</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="398"><span class="badge log pass-bg mr-2">Pass</span>Verify Global settings product status page</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User log in to application</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Verify user is on Global settings page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on product status button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And product status page should display</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Verify that Customize product status Active should display</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="409"><span class="badge log pass-bg mr-2">Pass</span>Verify Global settings product status page</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User log in to application</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Verify user is on Global settings page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on product status button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And product status page should display</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Verify that Customize product status Suspended should display</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="420"><span class="badge log pass-bg mr-2">Pass</span>Verify Global settings product status page</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User log in to application</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Verify user is on Global settings page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on product status button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And product status page should display</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Verify that Customize product status End of life should display</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="431"><span class="badge log pass-bg mr-2">Pass</span>Verify Global settings product status page</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User log in to application</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Verify user is on Global settings page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on product status button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And product status page should display</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Verify that Customize product status Add Status should display</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="442"><span class="badge log pass-bg mr-2">Pass</span>Verify user able to Add product status</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.user_log_in_to_application()">
+                <span>Given User log in to application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.LoginSTeps.armorcode_dashboard_should_be_displayed()">
+                <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_user_is_on_global_settings_page()">
+                <span>When Verify user is on Global settings page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.click_on_product_status_button()">
+                <span>And Click on product status button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.click_on_add_status_button()">
+                <span>And Click on Add status button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.added_status_popup_should_display()">
+                <span>Then Added status popup should display</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.add_new_status()">
+                <span>And Add new status</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.click_on_save_button()">
+                <span>And Click on save button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.Global_Settings.verify_added_status_should_display()">
+                <span>Then Verify added status should display</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="456"><span class="badge log pass-bg mr-2">Pass</span>Verify Risk Score page</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="457"><span class="badge log pass-bg mr-2">Pass</span>Verify Risk Score page</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User log in to application</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Verify user is on Global settings page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on Risk Score button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Risk Score page should display</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify that Product Dropdown should display</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="468"><span class="badge log pass-bg mr-2">Pass</span>Verify Risk Score page</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User log in to application</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Verify user is on Global settings page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on Risk Score button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Risk Score page should display</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify that SubProduct Dropdown should display</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="479"><span class="badge log pass-bg mr-2">Pass</span>Verify Risk Score page</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User log in to application</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Verify user is on Global settings page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on Risk Score button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Risk Score page should display</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify that Environment Dropdowns should display</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="490"><span class="badge log pass-bg mr-2">Pass</span>Verify Risk Score page</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User log in to application</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Verify user is on Global settings page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on Risk Score button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Risk Score page should display</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify that Inverse RiskScore Toggle should display</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="501"><span class="badge log pass-bg mr-2">Pass</span>Verify Risk Score page</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User log in to application</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Verify user is on Global settings page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on Risk Score button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Risk Score page should display</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify that Calculate Likelihood should display</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="512"><span class="badge log pass-bg mr-2">Pass</span>Verify Risk Score page</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User log in to application</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Verify user is on Global settings page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on Risk Score button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Risk Score page should display</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify that Calculate Impact should display</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="523"><span class="badge log pass-bg mr-2">Pass</span>Verify Risk Score page</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User log in to application</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Verify user is on Global settings page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on Risk Score button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Risk Score page should display</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify that Risk Score Preview should display</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="534"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Login page</p>
+            <p class="text-sm">
+              <span>3:04:45 pm</span> / <span>00:00:31:878</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Login page</h5>
+<span class='badge badge-success'>08.07.2023 3:04:45 pm</span>
+<span class='badge badge-danger'>08.07.2023 3:05:17 pm</span>
+<span class='badge badge-default'>00:00:31:878</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=534</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="535"><span class="badge log pass-bg mr-2">Pass</span>Check behavior of login via Microsoft for existing user.</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinitions.LoginSTeps.navigate_to_armorcode_portal()">
+                <span>Given Navigate to Armorcode portal</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.LoginSTeps.verify_that_login_page_is_displayed()">
+                <span>Then Verify that Login page is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.LoginSTeps.user_click_on_sign_in_using_microsoft_button()">
+                <span>When User click on Sign in Using microsoft button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.LoginSTeps.sign_in_microsoft_page_should_be_displayed()">
+                <span>Then Sign in microsoft page should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.LoginSTeps.user_enters_existing_microsoft_id_and_click_on_next()">
+                <span>When User enters existing microsoft id and click on next</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.LoginSTeps.user_enters_password_and_click_on_next()">
+                <span>And User enters password and click on next</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.LoginSTeps.click_on_yes_in_stay_signed_in_page()">
+                <span>And Click on yes in stay signed in page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.LoginSTeps.armorcode_dashboard_should_be_displayed()">
+                <span>Then Armorcode dashboard should be displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">36</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GS-085</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GS-085</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:52:20 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='124'>Verify the Dashboard has all the data</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify the Dashboard has all the data</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Microsoft_existing_user_Login</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Microsoft_existing_user_Login</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:04:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='534' id='535'>Check behavior of login via Microsoft for existing user.</a>
+<div class="">
+<span class="badge badge-default">Login page.Check behavior of login via Microsoft for existing user.</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GS-108</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GS-108</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:57:37 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='285'>Verify the Title page</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify the Title page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GS-118</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GS-118</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:59:48 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='357'>Verify the submit button</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify the submit button</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GS-117</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GS-117</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:59:28 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='344'>Verify the Reset to Default button</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify the Reset to Default button</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GS-109</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GS-109</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:57:56 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='295'>Verify that User can esaily Change Title name of Respective Fields</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify that User can esaily Change Title name of Respective Fields</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GS-094</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GS-094</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:53:51 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='168'>Verify the checkbox and dashboard name</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify the checkbox and dashboard name</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@GS-101</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GS-101</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:55:25 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='209'>Select the default Dashboard functionality</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Select the default Dashboard functionality</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:55:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='221'>Select the default Dashboard functionality</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Select the default Dashboard functionality</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GS-086</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GS-086</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:52:38 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='135'>when we hover on the pen Icon tooltip should be display</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.when we hover on the pen Icon tooltip should be display</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GS-087</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GS-087</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:52:59 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='145'>when user Click on Pen icon edit dashboard popup should display</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.when user Click on Pen icon edit dashboard popup should display</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GS-127</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GS-127</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:00:28 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='386'>Verify Global settings finding status page</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify Global settings finding status page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">@GS-138</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GS-138</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:00:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='398'>Verify Global settings product status page</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify Global settings product status page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:01:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='409'>Verify Global settings product status page</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify Global settings product status page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:01:26 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='420'>Verify Global settings product status page</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify Global settings product status page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:01:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='431'>Verify Global settings product status page</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify Global settings product status page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GS-120</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GS-120</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:00:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='370'>Verify the Multi ticket setting page</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify the Multi ticket setting page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GS-064</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GS-064</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:52:01 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='111'>Verify Global Settings-Relese Management</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify Global Settings-Relese Management</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GS-031</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GS-031</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:50:33 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='58'>To verify Edited Product/Sub Products & Projects Names on every where.</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.To verify Edited Product/Sub Products & Projects Names on every where.</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GS-047</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GS-047</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:51:21 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='84'>To check SLA template configs</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.To check SLA template configs</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GS-055</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GS-055</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:51:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='95'>To verify deletion of SLA template</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.To verify deletion of SLA template</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>40</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Global_Settings_page</p>
+<p class="duration text-sm">41 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Global_Settings_page</h4>
+<span status="pass" class='badge log pass-bg'>40 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:50:16 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='49'>To verify Global Setting button</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.To verify Global Setting button</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:50:33 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='58'>To verify Edited Product/Sub Products & Projects Names on every where.</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.To verify Edited Product/Sub Products & Projects Names on every where.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:51:02 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='71'>To set the basis on which product risk score will be calculated.</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.To set the basis on which product risk score will be calculated.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:51:21 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='84'>To check SLA template configs</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.To check SLA template configs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:51:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='95'>To verify deletion of SLA template</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.To verify deletion of SLA template</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:52:01 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='111'>Verify Global Settings-Relese Management</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify Global Settings-Relese Management</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:52:20 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='124'>Verify the Dashboard has all the data</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify the Dashboard has all the data</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:52:38 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='135'>when we hover on the pen Icon tooltip should be display</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.when we hover on the pen Icon tooltip should be display</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:52:59 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='145'>when user Click on Pen icon edit dashboard popup should display</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.when user Click on Pen icon edit dashboard popup should display</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:53:27 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='157'>Verify the checkbox and dashboard name</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify the checkbox and dashboard name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:53:51 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='168'>Verify the checkbox and dashboard name</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify the checkbox and dashboard name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:54:16 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='178'>Verify Dashboard config functionality</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify Dashboard config functionality</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:54:41 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='189'>Verify product/Sub product security Dashboard functionality</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify product/Sub product security Dashboard functionality</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:55:04 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='199'>Configure Product / Subproduct SSDLC Dashboard functionality</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Configure Product / Subproduct SSDLC Dashboard functionality</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:55:25 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='209'>Select the default Dashboard functionality</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Select the default Dashboard functionality</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:55:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='221'>Select the default Dashboard functionality</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Select the default Dashboard functionality</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:56:11 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='229'>Verify Reset to Default</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify Reset to Default</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:56:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='246'>Verify Error message of ROI Calculation</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify Error message of ROI Calculation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:56:52 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='258'>Verify the success popup mesage</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify the success popup mesage</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:57:14 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='270'>Verify that User can esaily Change Title name of Respective Fields</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify that User can esaily Change Title name of Respective Fields</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:57:37 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='285'>Verify the Title page</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify the Title page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:57:56 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='295'>Verify that User can esaily Change Title name of Respective Fields</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify that User can esaily Change Title name of Respective Fields</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:58:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='310'>Verify that Editable titles should be Disaply at Respective place.</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify that Editable titles should be Disaply at Respective place.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:58:47 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='322'>Verify that Editable titles should be Disaply at Respective place.</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify that Editable titles should be Disaply at Respective place.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:59:11 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='334'>Verify That Devops Widget Configuration</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify That Devops Widget Configuration</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:59:28 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='344'>Verify the Reset to Default button</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify the Reset to Default button</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:59:48 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='357'>Verify the submit button</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify the submit button</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:00:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='370'>Verify the Multi ticket setting page</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify the Multi ticket setting page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:00:28 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='386'>Verify Global settings finding status page</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify Global settings finding status page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:00:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='398'>Verify Global settings product status page</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify Global settings product status page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:01:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='409'>Verify Global settings product status page</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify Global settings product status page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:01:26 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='420'>Verify Global settings product status page</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify Global settings product status page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:01:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='431'>Verify Global settings product status page</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify Global settings product status page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:02:05 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='442'>Verify user able to Add product status</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify user able to Add product status</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:02:36 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='457'>Verify Risk Score page</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify Risk Score page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:02:53 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='468'>Verify Risk Score page</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify Risk Score page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:03:13 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='479'>Verify Risk Score page</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify Risk Score page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:03:31 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='490'>Verify Risk Score page</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify Risk Score page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:03:48 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='501'>Verify Risk Score page</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify Risk Score page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:04:08 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='512'>Verify Risk Score page</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify Risk Score page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:04:27 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='523'>Verify Risk Score page</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify Risk Score page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GS-100</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GS-100</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:55:04 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='199'>Configure Product / Subproduct SSDLC Dashboard functionality</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Configure Product / Subproduct SSDLC Dashboard functionality</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@GS-110</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GS-110</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:58:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='310'>Verify that Editable titles should be Disaply at Respective place.</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify that Editable titles should be Disaply at Respective place.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:58:47 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='322'>Verify that Editable titles should be Disaply at Respective place.</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify that Editable titles should be Disaply at Respective place.</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">@AlertsPage</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@AlertsPage</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:47:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>Check Count of Alerts based on Alert Severity</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Check Count of Alerts based on Alert Severity</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:48:15 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='12'>Check Count of Alerts based on Alert Severity</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Check Count of Alerts based on Alert Severity</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:48:43 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='21'>Check Count of Alerts based on Alert Severity</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Check Count of Alerts based on Alert Severity</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:49:13 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='30'>Check Count of Alerts based on Alert Severity</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Check Count of Alerts based on Alert Severity</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:49:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='39'>Check Count of Alerts based on Alert Severity</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Check Count of Alerts based on Alert Severity</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GS-093</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GS-093</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:53:27 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='157'>Verify the checkbox and dashboard name</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify the checkbox and dashboard name</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GS-104</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GS-104</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:56:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='246'>Verify Error message of ROI Calculation</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify Error message of ROI Calculation</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">@AL-002</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@AL-002</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:47:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>Check Count of Alerts based on Alert Severity</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Check Count of Alerts based on Alert Severity</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:48:15 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='12'>Check Count of Alerts based on Alert Severity</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Check Count of Alerts based on Alert Severity</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:48:43 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='21'>Check Count of Alerts based on Alert Severity</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Check Count of Alerts based on Alert Severity</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:49:13 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='30'>Check Count of Alerts based on Alert Severity</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Check Count of Alerts based on Alert Severity</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:49:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='39'>Check Count of Alerts based on Alert Severity</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Check Count of Alerts based on Alert Severity</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GS-116</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GS-116</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:59:11 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='334'>Verify That Devops Widget Configuration</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify That Devops Widget Configuration</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GS-041</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GS-041</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:51:02 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='71'>To set the basis on which product risk score will be calculated.</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.To set the basis on which product risk score will be calculated.</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GS-103</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GS-103</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:56:11 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='229'>Verify Reset to Default</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify Reset to Default</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@GS-107</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GS-107</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:57:14 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='270'>Verify that User can esaily Change Title name of Respective Fields</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify that User can esaily Change Title name of Respective Fields</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GS-030</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GS-030</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:50:16 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='49'>To verify Global Setting button</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.To verify Global Setting button</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GS-099</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GS-099</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:54:41 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='189'>Verify product/Sub product security Dashboard functionality</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify product/Sub product security Dashboard functionality</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>7</span>
+</span>
+<p class="name">@GS-150</p>
+<p class="duration text-sm">7 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GS-150</h4>
+<span status="pass" class='badge log pass-bg'>7 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:02:36 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='457'>Verify Risk Score page</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify Risk Score page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:02:53 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='468'>Verify Risk Score page</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify Risk Score page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:03:13 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='479'>Verify Risk Score page</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify Risk Score page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:03:31 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='490'>Verify Risk Score page</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify Risk Score page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:03:48 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='501'>Verify Risk Score page</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify Risk Score page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:04:08 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='512'>Verify Risk Score page</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify Risk Score page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:04:27 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='523'>Verify Risk Score page</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify Risk Score page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GS-095</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GS-095</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:54:16 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='178'>Verify Dashboard config functionality</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify Dashboard config functionality</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Login</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Login</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:04:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='534' id='535'>Check behavior of login via Microsoft for existing user.</a>
+<div class="">
+<span class="badge badge-default">Login page.Check behavior of login via Microsoft for existing user.</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">@Alerts</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Alerts</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:47:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>Check Count of Alerts based on Alert Severity</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Check Count of Alerts based on Alert Severity</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:48:15 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='12'>Check Count of Alerts based on Alert Severity</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Check Count of Alerts based on Alert Severity</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:48:43 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='21'>Check Count of Alerts based on Alert Severity</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Check Count of Alerts based on Alert Severity</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:49:13 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='30'>Check Count of Alerts based on Alert Severity</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Check Count of Alerts based on Alert Severity</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:49:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='39'>Check Count of Alerts based on Alert Severity</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Check Count of Alerts based on Alert Severity</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GS-139</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GS-139</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:02:05 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='442'>Verify user able to Add product status</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify user able to Add product status</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GS-105</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GS-105</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:56:52 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='258'>Verify the success popup mesage</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify the success popup mesage</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>3</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:49:29 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='36'>Then Verify count of Alerts based on High</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Check Count of Alerts based on Alert Severity.Then Verify count of Alerts based on High</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:50:02 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='45'>Then Verify count of Alerts based on Critical</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Check Count of Alerts based on Alert Severity.Then Verify count of Alerts based on Critical</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:57:37 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='282'>Then Verify in Manage Section specific name should display</a>
+<div class="">
+<span class="badge badge-default">ALert Page funtionality.Verify that User can esaily Change Title name of Respective Fields.Then Verify in Manage Section specific name should display</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
