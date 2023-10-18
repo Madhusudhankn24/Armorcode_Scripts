@@ -18,7 +18,6 @@ import org.testng.Assert;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.service.ExtentService;
 
-import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -33,7 +32,7 @@ public class Scans
 {
 	public static WebDriver driver;
 	public  WebDriverWait wait;
-	String uname ="punith.tg@3ktechnologies.com";//amrutha.tv@3ktechnologies.com
+	String uname ="punith.tg@3ktechnologies.com";
 	String pwd = "pUnI@0804";
 	public  objects obj;
 	public Elements_scans ele;
@@ -94,7 +93,7 @@ public class Scans
 	}
 	//@Before(order=1)	
 	public void setenvironmentvariables() {
-		
+
 		Capabilities cap=((RemoteWebDriver) driver).getCapabilities();
 		ExtentReports extent =ExtentService.getInstance();
 		extent.setSystemInfo("OS",System.getenv("OS"));
@@ -120,7 +119,7 @@ public class Scans
 		Thread.sleep(2000);
 		obj.SignIn_Button();
 	}
-*/
+	 */
 	@Then("Dashboard page should be displayed1")
 	public void dashboard_page_should_be_displayed() throws InterruptedException 
 	{
@@ -134,7 +133,7 @@ public class Scans
 	@Given("click on scans tab")
 	public void click_on_scans_tab() throws InterruptedException 
 	{
-	
+
 		ele=new Elements_scans(driver);
 		ale= new Alerts_Elements(driver);
 		ale.alerts_tab_btn();
@@ -380,13 +379,13 @@ public class Scans
 	@Then("Redirecting to finding page and scan tool soruce should be same")
 	public void redirecting_to_finding_page_and_scan_tool_soruce_should_be_same() throws InterruptedException 
 	{
-//		WebElement customtext = driver.findElement(By.xpath("(//*[.='Custom'])[1]"));
-//		wait= new WebDriverWait(driver,Duration.ofSeconds(30));
-//		wait.until(ExpectedConditions.visibilityOf(customtext));
-//		String fidcustomtxt = customtext.getText();
-//		System.out.println(fidcustomtxt);
-//		Assert.assertEquals(fidcustomtxt, "Custom");
-		
+		//		WebElement customtext = driver.findElement(By.xpath("(//*[.='Custom'])[1]"));
+		//		wait= new WebDriverWait(driver,Duration.ofSeconds(30));
+		//		wait.until(ExpectedConditions.visibilityOf(customtext));
+		//		String fidcustomtxt = customtext.getText();
+		//		System.out.println(fidcustomtxt);
+		//		Assert.assertEquals(fidcustomtxt, "Custom");
+
 	}
 	//tooltip
 	@When("mousehover on clear button")
@@ -485,7 +484,7 @@ public class Scans
 	@Then("cancel_sort button Tooltip should be displayed")
 	public void cancel_sort_button_tooltip_should_be_displayed() {
 		ele.cancel_sort_tooltip();
-	
+
 	}
 	//scan1_page
 
@@ -566,7 +565,7 @@ public class Scans
 		Assert.assertEquals(sucess, true);
 		boolean uploadmsg = driver.getPageSource().contains("File uploaded successfully");
 		Assert.assertEquals(uploadmsg, true);
-		
+
 	}
 	@Then("cross icon should be displayed in scan status")
 	public void cross_icon_should_be_displayed_in_scan_status() 
@@ -574,7 +573,7 @@ public class Scans
 		ele.scan_id();
 		ele.scantool_verify();
 		ele.crossmarkimage();
-		
+
 	}
 
 	@When("upload .exe file")
